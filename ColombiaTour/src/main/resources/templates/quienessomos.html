@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+    <link rel="stylesheet" type="text/css" href="css/quienessomos.css">
+    
+    <title>Quienes somos</title>
+</head>
+<body>
+   <header th:replace="plantilla/template :: header"> </header>
+	
+
+    <div class="banner-quienes">
+        <img src="imagenes/bannerimgquienes.jpg">
+        <div class="banner-body-quienes">
+            <h1>¿Quiénes somos?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores provident consectetur unde accusamus iusto, qui harum dolorum maxime eius! 
+                Dolore quibusdam assumenda in est nemo. Ipsum labore debitis non itaque.</p>
+        </div>
+    </div>
+    <div class="body-quienes">
+        <h2>ColombiaTour</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda quod dignissimos molestiae perspiciatis, temporibus ducimus soluta nam animi, alias dolores laboriosam fugiat. Tempore sed explicabo quae blanditiis suscipit animi.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis aspernatur ea aut itaque dignissimos distinctio fugit eligendi, officia ex modi eius, tempora non voluptates repellendus esse unde minus blanditiis. Aliquam.</p>
+    </div>
+
+    <div class="banner-quienes-2">
+        <img src="imagenes/quienesbanner2.jpg">
+        <div class="banner-quienes-2-body" >
+            <h1 class="rellax" data-rellax-speed="1">Nuestro compromiso con Colombia</h1>
+            <p class="rellax" data-rellax-speed="1">Estamos comprometidos con nuestro país Colombia y nuestro objetivo es transimitr a los turistas
+                las bondades de nuestro pais a la vez que ayudamos a los trabajodres del turismo
+            </p>
+        </div>
+    </div>
+
+    <div class="body-misvis">
+        <h1>Mision</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, iusto unde accusamus, vitae non cupiditate laudantium atque iste iure debitis ipsa dicta maxime. Quae ad, libero excepturi obcaecati cumque expedita!</p>
+        <h1>Vision</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti enim quibusdam eius perferendis soluta consectetur commodi eveniet cupiditate impedit tempora veritatis neque et voluptatibus rerum rem itaque, repellendus culpa magnam!</p>
+    </div>
+
+<footer th:replace="plantilla/template :: footer"> </footer>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
+</body>
+</html>

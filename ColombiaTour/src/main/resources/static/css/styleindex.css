@@ -1,0 +1,311 @@
+
+
+.banner{
+ overflow: hidden;
+   
+}
+
+.banner figure img {
+    padding: 0;
+    margin: 0;    
+    float: left;
+    
+}
+
+.banner-montana{
+  overflow: hidden;
+  height: 150px;
+}
+
+.banner-montana img{
+  transform: translateY(-42em);
+}
+
+.banner-acercaCol{
+  overflow: hidden;
+  height: 400px;
+}
+
+
+.main-title {
+  color: #004E89;
+  font-family: "Lato",sans-serif;
+}
+
+.card-index{
+  
+  background-image: url(../imagenes/payment.png);
+  background-image: cover;
+  background-repeat: no-repeat;
+  transition: transform 500ms ease;
+  width: 510px;
+  height: 510px;
+  max-width: 510px;
+  max-height: 510px;
+  color: #eff1f3;
+}
+
+.card-index-content{
+  height: 510px;
+  background: linear-gradient(
+  hsl(0 0% 0% /0),
+  hsl(0 0% 0% /0.1)10%,
+  hsl(0 0% 0% /0.5) 
+  );
+
+  
+}
+
+.card-index-map{
+  
+  background-image: url(../imagenes/juan-nino-veuWvmkqUmk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 710px;
+  color: #eff1f3;
+}
+
+.card-index-map-content{
+  height: 710px;
+  background: linear-gradient(
+  hsl(0 0% 0% /0),
+  hsl(0 0% 0% /0.1)10%,
+  hsl(0 0% 0% /0.5) 
+  );
+
+  
+}
+
+.card-index-seg{
+  background-image: url(../imagenes/police.png);
+  background-image: cover;
+  background-repeat: no-repeat;
+  transition: transform 500ms ease;
+  width: 510px;
+  height: 510px;
+  max-width: 510px;
+  max-height: 510px;
+  color: #eff1f3;
+  
+}
+
+.card-index-visa{
+  margin-top: 2em;
+  background-image: url(../imagenes/passsport.png);
+  background-image: cover;
+  background-repeat: no-repeat;
+  transition: transform 500ms ease;
+  width: 1060px;
+  height: 589px;
+  max-width: 1100px;
+  max-height: 589px;
+  color: #eff1f3;
+  
+}
+
+.card-index-content-visa{
+  height: 589px;
+  background: linear-gradient(
+  hsl(0 0% 0% /0),
+  hsl(0 0% 0% /0.1)10%,
+  hsl(0 0% 0% /0.6) 
+  );
+
+  
+}
+
+
+
+.card-index:hover,.card-index-seg:hover, .card-index-visa:hover{
+ 
+  transform: scale(1.09);
+
+}
+
+
+
+.card-index-title{
+  padding-top: 6em;
+  padding-left: 0.5em;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 35px;
+
+}
+
+
+.card-index-body{
+  padding-top: 9.5em;
+  padding-left: 1.5em;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 18.5px;
+
+}
+
+
+.info-slider{
+    position: absolute;
+    color: #fff;
+    width: 70%;
+    margin-top: 8%;
+    margin-left: 3%;
+    
+}
+
+.main-whereToGo{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+
+.main-index{
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+  display: grid;
+  row-gap: 2em;
+  
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(5,auto);
+  }
+
+ .card-mapa-index-container{
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .map-index{
+    display: flex;
+    width: 650px;
+    
+    
+  }
+
+  .map-index path{
+    fill: #CCCBCD;
+    stroke: #EBF2FA;
+    stroke-width: 3px;
+    
+}
+  .map-index path:hover{
+    fill: #00457A;
+  }
+
+.main-button{
+  width: 450px;
+  height: 60px;
+   border: none;
+  background-color: #222324;
+  font-family: 'Oswald', sans-serif;
+  transition: ease-out 0.3s;
+  font-size: 1.1em;
+  outline: none;
+  color: #eff1f3;
+  cursor: pointer;
+
+    
+}
+.main-button-container{
+  position: relative;
+  margin-top: -1em;
+}
+.main-button:hover{
+  box-shadow: inset 500px 0 0 0 #004E89;
+}
+
+.main-about-us{
+  grid-column-start: 1;
+ grid-column-end: -1;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ margin: 5em 0em 3em 0em;
+ line-height: 2;
+ 
+}
+
+.main-about-us p{
+  width: 90%;
+}
+
+.main-about-us img{
+  width: 350px;
+  transition: ease-out 0.3s all;
+}
+
+.main-about-us img:hover{
+  transform: scale(0.9);
+}
+
+.main-climate{
+ grid-column-start: 1;
+ grid-column-end: -1;
+}
+
+
+.main-info{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  
+}
+
+
+
+
+.info-slider span {
+
+  	font: 700 4em/1 'Fugaz One', cursive;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(217, 255, 0, 0.5);
+    
+
+/* Clip Background Image */
+
+	  background: url(../imagenes/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+  @-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+
+    
+
+    
+
+    
+
+
+
+
+
+    

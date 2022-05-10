@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+    <link rel="stylesheet" type="text/css" href="css/detalles.css">
+    
+    <title>Departamento detalles</title>
+</head>
+<body>
+    <header th:replace="plantilla/template :: header"> </header>
+    
+    <div class="banner-detalles">
+            <img th:src="${municipio.imgurl}">
+        <div class="container-title-detalles">
+            <p class="title-detalles" th:text="${municipio.nombreciudad}">
+                   
+            </p>
+            <p class="sub-title-detalles" th:text="${municipio.descripcion}"></p>
+            
+        </div>
+        
+    </div>
+    <div class="climate-container">
+        
+            <div>
+<!--             	Max 28° / Min 18° -->
+                <img src="imagenes/icons/clima.png">
+                Max
+                <p th:text="${municipio.clima.max}"></p>
+               <p> / </p>
+                Min
+                <p th:text="${municipio.clima.min}"></p>
+            </div>
+        
+    </div>
+
+    <div class="body-detalles">
+        <div class="body-detalles-text">
+            <h1>Historia</h1>
+               <p th:text="${municipio.historia.descripcion}"></p>
+              
+               <h1>Gastronomia</h1>
+               <div class="card-detalles"> 
+               <div th:each="pla:${platos}" class="card-item">
+               <img alt="" th:src="${pla.img}">
+                <h1 th:text="${pla.nombre}"></h1>
+                <p th:text="${pla.descripcion}">Platos</p>
+                </div>
+               </div>
+               
+               <h1>Centros comerciales</h1>
+                <div class="card-detalles">
+               <div th:each="centro:${centrosc}" class="card-item"> 
+                <p th:text="${centro.descripcion}"></p>
+                </div>
+               </div>
+                            
+               <h1>Negocios</h1>
+               <div class="card-detalles"> 
+                <div th:each="neg:${negocios}" class="card-item">
+               <p th:text="${neg.descripcion}"></p>
+               </div>
+               </div>
+              
+               
+               
+        </div>
+        <div class="side-bar">
+          <p>Sidebar</p>
+        </div>
+    </div>
+	
+   <footer th:replace="plantilla/template :: footer"> </footer>
+
+
+</body>
+</html>

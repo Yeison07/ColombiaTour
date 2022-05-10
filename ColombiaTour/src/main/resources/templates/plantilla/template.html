@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<link rel="stylesheet" type="text/css" th:href="@{/css/styleindex.css}">
+<title>ColombiaTour</title>
+</head>
+<body>
+	<header th:fragment="header">
+		<div class="nav-container">
+
+			<div class="nav-logo-container">
+				<a th:href="@{/}"><img class="icon"
+					src="imagenes/dibujofinal.png"></a>
+
+			</div>
+			<div class="nav-links-container">
+				<nav>
+					<ul class="nav_links">
+						<li><a th:href="@{/mapaCompleto}">MAPA VIRTUAL</a></li>
+						<li><a href="#about-us">SOBRE COLOMBIA</a></li>
+						<li><a th:href="@{/quienesSomos}">¿QUIÉNES SOMOS?</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="login">
+				<a th:href="@{/indexlogin}">Iniciar sesion</a>
+			</div>
+			<div class="select-leng">
+				<div class="menu-leng">
+					<div class="pick-leng">
+						<!--English-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<footer th:fragment="footer">
+		<div class="main-footer ">
+			<div class="main-footer-links-l ">
+				<ul class="nav_links-footer">
+					<li class="nav-links-footer-title">Información util para
+						viajar</li>
+					<hr class="foot-line">
+					<li><a href="#">Acerca de Colombia</a></li>
+					<li><a href="#">Clima</a></li>
+					<li><a href="#">Covertidor de moneda</a></li>
+					<li><a href="#">Visa y embajadas</a></li>
+				</ul>
+			</div>
+			<div class="main-footer-links-r">
+				<ul class="nav_links-footer">
+					<li>Entidades gubernamentales</li>
+					<hr class="foot-line">
+					<li><a href="#">Ministerio de Comercio, Industria y
+							Turismo</a></li>
+					<li><a href="#">Ministerio de cultura</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="copy">
+			<p>Sitio oficial ColombiaTour. Copyright ©, All Rights Reserved</p>
+		</div>
+	</footer>
+
+
+
+</body>
+</html>

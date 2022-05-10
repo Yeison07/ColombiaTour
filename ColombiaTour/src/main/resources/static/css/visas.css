@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container-visas{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.main-title {
+    color: #004E89;
+    font-family: "Lato",sans-serif;
+  }
+
+.container-visas-body{
+    margin-top: 2em;
+}
+
+.container-visas-body ul li::before{
+    content: "\25B8";
+    align-items: center;
+    color: #004E89;
+    font-size: 1.5em;
+}
+
+.banner-visas{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.banner-visas img{
+    transform: translateY(-5em);
+}
+
+.banner-visas-body h1{
+    font-family: "oswald",sans-serif;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+.banner-visas-body{
+    position: absolute;
+    margin-top: -10em;
+    margin-left: 5em;
+    color: #fff;
+    
+}

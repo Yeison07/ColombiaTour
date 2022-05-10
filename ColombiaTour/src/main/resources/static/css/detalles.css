@@ -1,0 +1,105 @@
+.banner-detalles{
+    overflow: hidden;
+}
+.container-title-detalles{
+    position: absolute;
+    margin-left: 44em;
+    margin-top: -35em;
+    
+}
+.title-detalles{
+    
+    font: 700 6em/1 'Fugaz One', cursive;
+  	letter-spacing: 10px;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 10px 10px 60px rgb(0, 80, 9);
+      color: white;
+      
+      
+}
+
+.sub-title-detalles{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.climate-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: -5em;
+    padding-right: 3em;
+    color: #EBF2FA;
+    
+    
+}
+
+.climate-container div{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.3em 2em 0.3em 2em;
+    
+    
+}
+
+
+.body-detalles{
+    display: flex;
+    padding: 2em 0 5em 0;
+    margin: 0 auto;
+}
+
+.body-detalles-text{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.side-bar{
+    background-color: #3D3C3E;
+   height: auto;
+    width: 300px;
+    display: flex;
+    margin-right: 10em;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.climate-container img{
+    width: 45px;
+    padding-right: 1em;
+   
+    
+}
+
+.card-detalles{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.card-item{
+   
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    height: 400px;
+    margin: 1em 0em 1em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-item p{
+    width: 80%;
+}
+
+.card-detalles img{
+	width:250px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');

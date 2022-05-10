@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ColombiaTour</title>
+	<link rel="stylesheet" href="css/Registro.css">
+	<link rel="icon" href="imagenes/logo.ico"/>
+   
+</head>
+<body>
+	<div class="contendor_principal animated fadeInUp">
+
+	<img class="LOGO"src="imagenes/logo.png" alt="ColombiaTour">
+
+		<h1>ColombiaTour</h1>
+		<form th:action="@{/formRegistro/insertU}" th:object="${usuario}" method="post">
+			
+			
+			<label for="Username">Nombres</label>
+			<input type="text"  th:field="*{nombre}" placeholder="Nombres" name="nombre">
+
+			<label for="Username">Apellidos</label>
+			<input type="text"  th:field="*{apellido}" placeholder="Apellidos" name="apellido">
+
+			<label for="Username">Correo Electronico</label>
+			<input type="text"  th:field="*{user}" placeholder="e-mail">
+
+			
+			<label for="password">Contraseña</label>
+			<input type="password" th:field="*{password}" placeholder="Ingresa contraseña">
+
+			<input type="submit" value="registrarse">
+		</form>
+		
+	</div>
+</body>
+</html>

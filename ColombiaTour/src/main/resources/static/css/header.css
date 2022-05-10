@@ -1,0 +1,78 @@
+
+/* Contenedor de la barra de navegacion*/
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    
+}
+
+.nav-logo-container{
+    margin-right: auto;
+    padding-left: 2%;
+}
+
+.nav-links-container{
+    padding-right: 18%;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 2em;
+}
+
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 15px;
+}
+
+.nav_links li a:hover{
+    color: #ad9731;
+}
+
+/* Contenedor del selector de idioma*/
+.select-leng{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3%;
+    
+}
+
+.select-leng p{
+    font-family: "Lato",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration:none;
+    color: #fff; 
+    text-align: center;
+   
+    
+}
+
+.select-leng img{
+    width: 30px;
+    height: 30px;
+    margin-left: 30%;
+
+}
+
+.menu-leng{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+    
+}
+.login a{
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+    text-decoration:none;
+    color: #fff; 
+   
+}

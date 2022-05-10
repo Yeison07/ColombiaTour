@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/seguridad.css">
+    <title>Seguridad en el país</title>
+</head>
+<body>
+    <header th:replace="plantilla/template :: header"> </header>
+    
+    <div class="banner-seguridad">
+        <img src="imagenes/banner-seg.jpg">
+    </div>
+    <div class="banner-seguridad-body">
+        <h1>SEGURIDAD</h1>
+    </div>
+    <div class="container-body">
+        <div class="container-body-child">
+            <div>
+                <p class="subtitle">Policia Nacional</p>
+                <p>La policia Nacional es el cuerpo policiaco encargado de velar por la seguridad en el pais.</p>
+                <p>Aparte de sus funciones como entes de seguridad, la policia nacional tambien tiene divisiones de turismo que pueden servir de ayuda
+                    para el turista.
+                </p>
+                <p>El numero de emergencia es el 123, <b>SOLO</b> debe usarse para emergencias bajo ninguna circustancia debe llamarse a ese numero solo por dudas.</p>
+            </div>
+        <img src="imagenes/ponal.jpg" alt="">
+    </div>
+   
+    </div>
+
+
+    <div class="banner-police">
+        <img src="imagenes/dontEnter.jpg" class="rellax" data-rellax-speed="10" alt="">
+    </div>
+
+    <div class="container-body">
+        <div class="container-body-child">
+        
+            <div>
+                <p class="subtitle">CAI</p>
+                <p>El Comando de Atención Inmediata (CAI) es la unidad policial con una jurisdicción menor, estratégicamente ubicada en los perímetros urbanos de los municipios, localidades o comunas, permitiendo una vigilancia específica de los sectores asignados con una adecuada capacidad de respuesta.</p>
+            </div>
+            <img src="imagenes/cai.jpg" alt="">
+        </div>
+    </div>
+    
+<footer th:replace="plantilla/template :: footer"> </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
+</body>
+</html>
